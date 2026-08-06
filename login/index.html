@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login page</title>
+
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #1a1a1a;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .login-card {
+        background-color: #e2e0e0;
+        width: 400px;
+        border-radius: 12px;
+        padding: 30px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .name {
+        display: flex;
+        width: 100%;
+        gap: 10px;
+      }
+
+      .name input {
+        flex: 1;
+        min-width: 0;
+      }
+
+      h2 {
+        text-align: center;
+        margin: 20px;
+        color: #216c32;
+      }
+
+      input {
+        margin-bottom: 15px;
+        padding: 10px;
+        border-radius: 8px;
+        background-color: #e2e0e0;
+        border: 1px solid #1a1a1a;
+      }
+
+      button {
+        background-color: #216c32;
+        color: #fff;
+        padding: 10px;
+        border-radius: 8px;
+      }
+
+      button:hover {
+        background-color: #1a5127;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-card">
+      <h2>Login</h2>
+
+      <form action="">
+        <input type="email" name="" id="" placeholder="Email" />
+        <div class="name">
+          <input type="text" name="" id="" placeholder="First name" />
+          <input type="text" name="" id="" placeholder="Last name" />
+        </div>
+        <input type="password" name="" id="" placeholder="Password" />
+        <button type="submit">Sign up</button>
+      </form>
+    </div>
+  </body>
+</html>
