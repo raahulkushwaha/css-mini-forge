@@ -11,7 +11,13 @@
 
     <div class="container">
       <h2>1. Basic Grid (3x3)</h2>
-      <div class="grid-container">
+      <div
+        class="grid-container"
+        style="
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(3, 100px);
+        "
+      >
         <div class="box">1</div>
         <div class="box">2</div>
         <div class="box">3</div>
@@ -26,7 +32,7 @@
 
     <div class="container">
       <h2>2. Grid with Different Column Sizes</h2>
-      <div class="grid-container">
+      <div class="grid-container" style="grid-template-columns: 1fr 2fr 1fr">
         <div class="box">1</div>
         <div class="box">2</div>
         <div class="box">3</div>
@@ -35,7 +41,10 @@
 
     <div class="container">
       <h2>3. Grid with Gaps</h2>
-      <div class="grid-container">
+      <div
+        class="grid-container"
+        style="grid-template-columns: repeat(3, 1fr); gap: 20px"
+      >
         <div class="box">1</div>
         <div class="box">2</div>
         <div class="box">3</div>
@@ -47,28 +56,45 @@
 
     <div class="container">
       <h2>4. Grid Item Placement</h2>
-      <div class="grid-container">
-        <div class="box">1</div>
+      <div
+        class="grid-container"
+        style="
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(3, 100px);
+        "
+      >
+        <div class="box" style="grid-column: 1/3; grid-row: 1/3">1</div>
         <div class="box">2</div>
         <div class="box">3</div>
         <div class="box">4</div>
-        <div class="box">5</div>
+        <div class="box" style="grid-column: 2/4">5</div>
       </div>
     </div>
 
     <div class="container">
       <h2>5. Grid Template Areas</h2>
-      <div class="grid-container">
-        <div class="box">Header</div>
-        <div class="box">Sidebar</div>
-        <div class="box">Main Content</div>
-        <div class="box">Footer</div>
+      <div
+        class="grid-container"
+        style="
+          grid-template-areas:
+            'header header header'
+            'sidebar main main'
+            'footer footer footer';
+        "
+      >
+        <div class="box" style="grid-area: header">Header</div>
+        <div class="box" style="grid-area: sidebar">Sidebar</div>
+        <div class="box" style="grid-area: main">Main Content</div>
+        <div class="box" style="grid-area: footer">Footer</div>
       </div>
     </div>
 
     <div class="container">
       <h2>6. Auto-Fit and Minmax</h2>
-      <div class="grid-container">
+      <div
+        class="grid-container"
+        style="grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))"
+      >
         <div class="box">1</div>
         <div class="box">2</div>
         <div class="box">3</div>
@@ -80,7 +106,15 @@
 
     <div class="container">
       <h2>7. Alignment and Justification</h2>
-      <div class="grid-container">
+      <div
+        class="grid-container"
+        style="
+          grid-template-columns: repeat(3, 1fr);
+          height: 200px;
+
+          align-items: center;
+        "
+      >
         <div class="box">1</div>
         <div class="box">2</div>
         <div class="box">3</div>
@@ -89,9 +123,9 @@
 
     <div class="container">
       <h2>8. Nested Grids</h2>
-      <div class="grid-container">
+      <div class="grid-container" style="grid-template-columns: 1fr 1fr">
         <div class="box">1</div>
-        <div class="grid-container">
+        <div class="grid-container" style="grid-template-columns: 1fr 1fr">
           <div class="box" style="background-color: #27ae60">2.1</div>
           <div class="box" style="background-color: #27ae60">2.2</div>
           <div class="box" style="background-color: #27ae60">2.3</div>
@@ -102,7 +136,7 @@
 
     <div class="container">
       <h2>9. Grid with Auto Rows</h2>
-      <div class="grid-container">
+      <div class="grid-container" style="grid-template-columns: repeat(3, 1fr)">
         <div class="box">1</div>
         <div class="box">2</div>
         <div class="box">3</div>
