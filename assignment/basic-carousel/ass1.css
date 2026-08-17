@@ -51,3 +51,19 @@ body {
   text-align: center;
   background: #333;
 }
+
+@media (max-width: 768px) {
+  .main {
+    padding: 0 10px;
+  }
+
+  .videos {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .video {
+    min-width: unset;
+    width: 100%;
+  }
+}
